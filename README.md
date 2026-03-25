@@ -22,7 +22,7 @@ Next picture shows the instances of the UDT, that can be used for multiple motor
 
 <img width="930" height="396" alt="Screenshot 2026-01-09 133243" src="https://github.com/user-attachments/assets/fe3bf473-df1f-4ac2-8c33-e0d10a40be0c" />
 
-### Implementation in Networks
+### Implementation in LADDER
 
 The next series of images show the code implemented in LADDER in the first network, and the rest of the code written in Structured Text in the second network. The simulation consists of:
 * A switch that represents the 'start / stop' button of the motor. When the switch is toggled to 'off', none of the motor's functionalities work.
@@ -35,7 +35,16 @@ Here are pictures of the code implemented in LADDER.
 <img width="1342" height="844" alt="Screenshot 2026-01-09 133403" src="https://github.com/user-attachments/assets/4d1de6b3-419e-45a7-a7e8-2afeaf3d8d2d" />
 <img width="899" height="608" alt="Screenshot 2026-01-09 133417" src="https://github.com/user-attachments/assets/b5a1ad6a-ade3-4e20-bd83-76138142b275" />
 
-And finally the next picture shows the piece of code written in Structured Text, in which i programmed 3 LED's to activate when the motor is set to the speed of their corresponding state: one between the values of 50 to 75, one for values between 75 and 98 and one for max speed when the values are between 98 and 100. When the motor is switched off or when a breakdown appears, none of the LEDs light up. The code for the breakdowns is also implemented here, which consist of the binary variables 'words', that are used to determine the general variable 'Avarie' (breakdown) through a simple binary equation: 1 | (1 << 2). This way there are formed 3 more states for the motor, when there are 1, 2, or no breakdowns. The corresponding LEDs also light up for each breakdown.
+### Implementation in Structured Text
+
+And finally the next picture shows the piece of code written in Structured Text, in which i programmed 3 LED's to activate when the motor is set to the speed of their corresponding state:
+* One between the values of 50 to 75,
+* One for values between 75 and 98,
+* One for max speed when the values are between 98 and 100.
+  
+When the motor is switched off or when a breakdown appears, none of the LEDs light up. The code for the breakdowns is also implemented here, which consist of the binary variables 'words', that are used to determine the general variable 'Avarie' (breakdown) through a simple binary equation: 1 | (1 << 2).
+
+This way there are formed 3 more states for the motor, when there are 1, 2, or no breakdowns. The corresponding LEDs also light up for each breakdown.
 
 <img width="1097" height="369" alt="Screenshot 2026-01-09 133425" src="https://github.com/user-attachments/assets/5b2cf899-3e91-4527-82fe-eb79a1d4af99" />
 
