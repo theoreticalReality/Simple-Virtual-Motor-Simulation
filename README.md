@@ -1,6 +1,4 @@
 # Simple-Virtual-Motor-Simulation
-A simulation of a simple motor programmed in PLC Siemens through UDTs (User Defined Data Types) that can be exposed and viewed 'online' in OPC UA.
-
 This project can only be viewed via TIA Portal Siemens V20 and it is configured for the PLC Siemens S7-1214C. 
 In the following images i will show the primitive variables i used for testing the project, the structure for the Motor UDT, Motor UDT variables and other configurations.
 
